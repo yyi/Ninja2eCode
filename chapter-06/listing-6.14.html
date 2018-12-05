@@ -13,7 +13,7 @@
 			});
 
 			promise.then(() => fail("Happy path, won't be called!"))
-				   .catch(error => pass("The promise was rejected because an exception was thrown!"));
+				   .catch(error => pass("The promise was rejected because an exception was thrown!"+typeof  error+":"+error.toString()));
 		</script>
 	</body>
 </html>

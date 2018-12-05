@@ -10,7 +10,7 @@
 		<script>
 			const ninjas = ["Yagyu", "Kumawakamaru", "Hattori", "Fuma"];
 
-			const removedItems = ninjas.splice(1, 1);
+			let removedItems = ninjas.splice(1, 1);
 
 			assert(removedItems.length === 1, "One item was removed");
 			assert(removedItems[0] === "Kumawakamaru");

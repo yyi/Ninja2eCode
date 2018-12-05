@@ -11,14 +11,14 @@
 			"use script";
 			
 			const ninjaPromise = new Promise((resolve, reject) => {
-			  resolve("Hatori");
-			  //reject("An error resolving a promise!");
+		//	  resolve("Hatori");
+			reject("An error resolving a promise!");
 			});
 
 			ninjaPromise.then(ninja => {
 			  assert(ninja === "Hatori", "We were promised Hatori!");
 			}, err => {
-			  fail("There shouldn’t be an error");
+			  fail("There shouldn’t be an error:"+err);
 			});
 		</script>
 	</body>
